@@ -22,4 +22,5 @@ pub(all) enum TimeSeriesError {
   InvalidProbability(Double)
   InvalidWeight(Int, Double)
   InvalidRange(Double, Double)
+  DuplicatePeriod(Int)
 } derive(Eq, Debug)
