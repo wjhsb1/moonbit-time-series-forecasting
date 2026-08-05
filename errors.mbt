@@ -19,4 +19,5 @@ pub(all) enum TimeSeriesError {
   InvalidBacktestConfig
   NoValidCandidate
   InvalidLag(Int, Int)
+  InvalidProbability(Double)
 } derive(Eq, Debug)
