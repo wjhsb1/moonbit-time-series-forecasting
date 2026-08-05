@@ -13,3 +13,7 @@ keywords = [ "time-series", "forecasting", "backtesting", "statistics" ]
 preferred_target = "wasm-gc"
 
 description = "Deterministic time series forecasting and backtesting for MoonBit"
+
+options(
+  exclude: [ "examples" ],
+)
