@@ -21,4 +21,5 @@ pub(all) enum TimeSeriesError {
   InvalidLag(Int, Int)
   InvalidProbability(Double)
   InvalidWeight(Int, Double)
+  InvalidRange(Double, Double)
 } derive(Eq, Debug)
