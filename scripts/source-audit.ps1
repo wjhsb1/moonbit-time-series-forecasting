@@ -4,14 +4,18 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $root = (Resolve-Path -LiteralPath $RepositoryRoot).Path
-$rootFiles = @(Get-ChildItem -LiteralPath $root -File -Filter '*.mbt' | Sort-Object Name)
+$rootFiles = @(Get-ChildItem -LiteralPath $root -File | Where-Object {
+    $_.Extension -eq '.mbt'
+} | Sort-Object Name)
 $productionFiles = @($rootFiles | Where-Object {
     $_.Name -notlike '*_test.mbt' -and $_.Name -notlike '*_wbtest.mbt'
 })
 $testFiles = @($rootFiles | Where-Object {
     $_.Name -like '*_test.mbt' -or $_.Name -like '*_wbtest.mbt'
 })
-$exampleFiles = @(Get-ChildItem -LiteralPath (Join-Path $root 'examples') -File -Filter '*.mbt' -Recurse | Sort-Object FullName)
+$exampleFiles = @(Get-ChildItem -LiteralPath (Join-Path $root 'examples') -File -Recurse | Where-Object {
+    $_.Extension -eq '.mbt'
+} | Sort-Object FullName)
 
 function Measure-MoonBitSource {
     param([System.IO.FileInfo[]]$Files, [string]$Label)
