@@ -17,4 +17,5 @@ pub(all) enum TimeSeriesError {
   UndefinedPercentageMetric(Int)
   UndefinedScaledMetric
   InvalidBacktestConfig
+  NoValidCandidate
 } derive(Eq, Debug)
