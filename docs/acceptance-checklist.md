@@ -15,8 +15,8 @@ Evidence is marked complete only after direct verification.
 - [x] Source audit passes and rejects placeholder markers.
 - [x] README documents installation, usage, examples, boundaries, and verification.
 - [x] Development report and mathematical references are present.
-- [ ] Public GitHub repository is accessible at the declared URL.
-- [ ] GitHub Actions succeeds on the exact final `main` commit.
+- [x] Public GitHub repository is accessible at <https://github.com/wjhsb1/moonbit-time-series-forecasting> with `main` as the default branch.
+- [x] GitHub Actions run 30979484639 succeeds on `main` commit `ef010802e88d8d1d76eae3f1eacaf3b8f85f8242`.
 - [ ] `moon publish --dry-run` succeeds for version 0.1.0.
 - [ ] `wjhsb1/time-series-forecasting@0.1.0` is published on Mooncakes.
 - [ ] A clean external module installs exact version 0.1.0 and runs successfully.
