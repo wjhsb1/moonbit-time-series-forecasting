@@ -23,4 +23,6 @@ pub(all) enum TimeSeriesError {
   InvalidWeight(Int, Double)
   InvalidRange(Double, Double)
   DuplicatePeriod(Int)
+  ForecastAlignmentMismatch(Int)
+  InvalidModelCount(Int)
 } derive(Eq, Debug)
