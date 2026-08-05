@@ -18,4 +18,5 @@ pub(all) enum TimeSeriesError {
   UndefinedScaledMetric
   InvalidBacktestConfig
   NoValidCandidate
+  InvalidLag(Int, Int)
 } derive(Eq, Debug)
