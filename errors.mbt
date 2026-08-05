@@ -25,4 +25,5 @@ pub(all) enum TimeSeriesError {
   DuplicatePeriod(Int)
   ForecastAlignmentMismatch(Int)
   InvalidModelCount(Int)
+  NegativeMetricValue(Int)
 } derive(Eq, Debug)
