@@ -16,8 +16,8 @@ Evidence is marked complete only after direct verification.
 - [x] README documents installation, usage, examples, boundaries, and verification.
 - [x] Development report and mathematical references are present.
 - [x] Public GitHub repository is accessible at <https://github.com/wjhsb1/moonbit-time-series-forecasting> with `main` as the default branch.
-- [x] GitHub Actions run 30979484639 succeeds on `main` commit `ef010802e88d8d1d76eae3f1eacaf3b8f85f8242`.
+- [x] GitHub Actions run 30979658514 succeeds on release commit `cefb6212ebea0f3f3092160bf4ed134516af295d`; run 30980647606 succeeds on later evidence commit `0a419f905e74b3acdba9ad469686a42f5c7afc53`.
 - [x] Mooncakes accepts the `moon publish --dry-run` server verification for version 0.1.0 with HTTP 202.
 - [x] `wjhsb1/time-series-forecasting@0.1.0` is published on Mooncakes with HTTP 200.
 - [x] A clean external module installs exact version 0.1.0, passes strict check and build, and runs a Holt forecast successfully.
-- [ ] Immutable `v0.1.0` tag points to the verified release commit.
+- [x] Remote annotated tag `v0.1.0` resolves to verified release commit `cefb6212ebea0f3f3092160bf4ed134516af295d`.
