@@ -1,0 +1,5 @@
+import {
+  "wjhsb1/time-series-forecasting" @ts,
+}
+
+pkgtype(kind: "executable")
